@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://10.20.91.130/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.online.college.core.menu.dao.MenuDao">
+
+    <resultMap id="BeanResultMap" type="com.online.college.core.menu.domain.Menu">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="menu_name" property="menuName" jdbcType="VARCHAR"/>
+        <result column="div_id" property="divId" jdbcType="VARCHAR"/>
+        <result column="clazz_name" property="clazzName" jdbcType="VARCHAR"/>
+        <result column="is_show" property="isShow" jdbcType="INTEGER"/>
+        <result column="type" property="type" jdbcType="INTEGER"/>
+    </resultMap>
+
+
+    <sql id="All_Columns">
+        id,menu_name,div_id,clazz_name,is_show,type
+    </sql>
+
+    <select id="queryAll" parameterType="INTEGER" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM menu
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="isShow != ''">
+                AND is_show = #{isShow, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+    <select id="getById" parameterType="INTEGER"
+            resultType="com.online.college.core.menu.domain.Menu">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM menu
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="id != null">
+                AND id = #{id, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+</mapper>
