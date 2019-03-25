@@ -20,6 +20,7 @@
 		<!-- 静态文件 -->
 		<mvc:resources mapping="/res/**"  location="/res/"  cache-period="3600"/>
 		<mvc:resources mapping="/static/**"  location="/static/"  cache-period="3600"/>
+		<mvc:resources mapping="/ueditor/**"  location="/ueditor/"  cache-period="3600"/>
 		<!-- <mvc:resources mapping="/images/**"  location="/WEB-INF/images/"  cache-period="3600"/> -->
 		
 		<bean id="freemarkerConfig" class="com.online.college.common.web.shiro.ShiroFreeMarkerConfigurer">  

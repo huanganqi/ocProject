@@ -1,7 +1,1181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ocOperator:war" />
+      <artifact name="ocPortal:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55e28a88-aeef-421f-88b2-6ce0fb84bead" name="Default" comment="整合UEditor 以ocPortal模块为准">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/ProgramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/createModal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/programa/pagelist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/js/myUeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/download/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/dao/NoticeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/dao/NoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/entity/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/service/impl/NoticeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/UEditroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/UEditroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/resources/app-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/resources/app-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/resources/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/resources/shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/common/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/common/res.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/ueditor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/ueditor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/controller.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/xss.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/res/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/classes/app-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/classes/app-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/classes/com/online/college/opt/controller/UEditroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/classes/com/online/college/opt/controller/UEditroController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/classes/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/classes/shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator.war" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/app-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/app-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/com/online/college/opt/controller/UEditroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/com/online/college/opt/controller/UEditroController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/cms-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/cms-nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/common/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/common/res.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/ueditor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/ueditor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/controller.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/xss.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/res/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/user/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/user/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/static/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/ueditor/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/PortalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/PortalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal.war" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/PortalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/PortalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/res.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/tailPage2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/tailPage2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/user/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/user/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/res/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/res/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/res/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/res/i/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/res/i/header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/static/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/ueditor/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/dao/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/dao/MenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/dao/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/dao/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/domain/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/domain/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/IMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/dao/MenuDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/dao/MenuDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/dao/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/dao/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/domain/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/domain/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/service/IMenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/service/IMenuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/menu/service/impl/MenuServiceImpl.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/ocService/target/" />
+    <ignored path="$PROJECT_DIR$/ocWechat/target/" />
+    <ignored path="$PROJECT_DIR$/ocPortal/target/" />
+    <ignored path="$PROJECT_DIR$/ocOperator/target/" />
+    <ignored path="$PROJECT_DIR$/ocCommon/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="192.168.180.136" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="192.168.180.136" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="192.168.180.136" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ocdb: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ocProject" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="header2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="809" column="12" lean-forward="true" selection-start-line="809" selection-start-column="12" selection-end-line="809" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="1053" column="16" lean-forward="true" selection-start-line="1053" selection-start-column="16" selection-end-line="1053" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="res.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/common/res.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="res.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="35" column="76" lean-forward="true" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>/info</find>
+      <find>/getById</find>
+      <find>/index</find>
+      <find>divId</find>
+      <find>learn</find>
+      <find>course-menu</find>
+      <find>courseSection</find>
+      <find>menu-item</find>
+      <find>/home</find>
+      <find>s</find>
+      <find>new Mode</find>
+      <find>.addObject(&quot;s&quot;,</find>
+      <find>setAttribute</find>
+      <find>base</find>
+      <find>s.base</find>
+      <find>Json</find>
+      <find>appendChild</find>
+      <find>fragment</find>
+      <find>/learn</find>
+      <find>coll</find>
+      <find>tailPage</find>
+      <find>block-heading</find>
+      <find>common</find>
+      <find>setting-right</find>
+      <find>setting-left</find>
+      <find>left</find>
+      <find>left:0</find>
+      <find>modal-content</find>
+      <find>modal</find>
+      <find>modal-dialog</find>
+    </findStrings>
+    <dirStrings>
+      <dir>base</dir>
+      <dir>D:\project\idea\ocProject\ocOperator\src\main\java\com\online\college\opt\controller</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../springboot-activiti" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/baidu/ueditor/ActionEnter.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/classify/classifyIndex.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/auth/login.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/resources/shiro.xml" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/UEditroController.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/resources/app-servlet.xml" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/ueditor/index.html" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/service/NoticeService.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/service/impl/NoticeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/entity/Notice.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/res/js/myUeditor.jsp" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/res/js/myUeditor.js" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/createModal.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/res/css/style.css" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/ueditor/jsp/config.json" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/baidu/ueditor/ActionEnter.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/add.html" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/dao/NoticeMapper.xml" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/nitice/list.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage2.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage3.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/dao/NoticeDao.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/domain/Menu.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/programa/pagelist.html" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/dao/MenuMapper.xml" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/download/list.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/ProgramaController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ProgramController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/user/home.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/static/comment.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/user/nav.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/common/res.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/reset.css" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="361" />
+    <option name="y" value="202" />
+    <option name="width" value="1860" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="notice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocOperator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="style&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/res/css/style.css&#10;noti&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html&#10;tail&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/common/tailPage.html&#10;tailPage&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage.html&#10;menu&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java&#10;lear&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/learn.html&#10;jsonvi&#9;PSI&#9;JAVA://com.online.college.common.web.JsonView&#10;progra&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/ProgramaController.java&#10;pro&#9;PSI&#9;JAVA://com.online.college.opt.controller.ProgramaController&#10;learn&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/learn.html&#10;info&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html&#10;notice&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/notice/dao/NoticeMapper.xml&#10;noticecon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java&#10;list&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html&#10;noticeC&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java&#10;lea&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/learn.html&#10;NoticeContro&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java&#10;auth&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/auth/service/IAuthUserService.java&#10;sty&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/res/css/style.css&#10;index&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/ueditor/index.html&#10;notic&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html&#10;application&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/resources/application.properties&#10;Progra&#9;PSI&#9;JAVA://com.online.college.opt.controller.ProgramaController&#10;MenuCon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java&#10;Menu&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java&#10;Pro&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/ProgramaController.java&#10;menuC&#9;PSI&#9;JAVA://com.online.college.portal.controller.MenuController&#10;ShiroFilterFactoryBean&#9;PSI&#9;JAVA://org.apache.shiro.spring.web.ShiroFilterFactoryBean&#10;AuthFilter&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/web/auth/AuthFilter.java&#10;authFilter&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/web/auth/AuthFilter.java&#10;AuthRealm&#9;PSI&#9;JAVA://com.online.college.web.auth.AuthRealm&#10;commentSegment&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/commentSegment.html" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/supervision-master/supervision-master" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\res\header.jpg" />
+      <recent name="D:\project\idea\ocProject\ocOperator\src\main\webapp\WEB-INF\pages\ueditor" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.online.college.opt.controller" />
+      <recent name="com.online.college.portal.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\WEB-INF\pages\res" />
+      <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\res\i" />
+      <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\res\css" />
+      <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\WEB-INF\pages\common" />
+      <recent name="D:\project\idea\ocProject\ocOperator\src\main\webapp\WEB-INF\pages\cms\notice" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -45,5 +1219,803 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/portal/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ocPortal:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/portal" />
+          </settings>
+        </artifact>
+        <artifact name="ocOperator:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/operator" />
+          </settings>
+        </artifact>
+        <file path="D:/data">
+          <settings>
+            <option name="CONTEXT_PATH" value="/data" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ocProject_3" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="23090" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ocOperator:war" />
+          <artifact name="ocPortal:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55e28a88-aeef-421f-88b2-6ce0fb84bead" name="Default" comment="" />
+      <created>1551432756590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551432756590</updated>
+      <workItem from="1551432758802" duration="1000" />
+      <workItem from="1551432768024" duration="7994000" />
+      <workItem from="1551511444924" duration="2834000" />
+      <workItem from="1551746976575" duration="28000" />
+      <workItem from="1551766678023" duration="2434000" />
+      <workItem from="1551832464113" duration="1421000" />
+      <workItem from="1551833893296" duration="14167000" />
+      <workItem from="1551854490072" duration="12414000" />
+      <workItem from="1551926712069" duration="4372000" />
+      <workItem from="1551944200754" duration="26000" />
+      <workItem from="1551970497813" duration="344000" />
+      <workItem from="1552402572236" duration="643000" />
+      <workItem from="1552438220138" duration="7231000" />
+      <workItem from="1552454185498" duration="1312000" />
+      <workItem from="1552456962824" duration="15908000" />
+      <workItem from="1552486177096" duration="3295000" />
+      <workItem from="1552525249733" duration="148000" />
+      <workItem from="1552551472860" duration="2056000" />
+      <workItem from="1552571305243" duration="1911000" />
+      <workItem from="1552577422593" duration="13590000" />
+      <workItem from="1552634986584" duration="2780000" />
+      <workItem from="1552701370587" duration="782000" />
+      <workItem from="1552704459088" duration="778000" />
+      <workItem from="1552709886717" duration="602000" />
+      <workItem from="1552720105421" duration="1573000" />
+      <workItem from="1552736353017" duration="2961000" />
+      <workItem from="1552817038999" duration="636000" />
+      <workItem from="1552821946547" duration="3821000" />
+      <workItem from="1552870921342" duration="12280000" />
+      <workItem from="1552961236389" duration="36000" />
+      <workItem from="1553044552237" duration="16148000" />
+      <workItem from="1553129470724" duration="14701000" />
+      <workItem from="1553216213724" duration="12417000" />
+      <workItem from="1553236317109" duration="21807000" />
+      <workItem from="1553263413684" duration="1738000" />
+      <workItem from="1553267779559" duration="5303000" />
+      <workItem from="1553493843841" duration="13111000" />
+    </task>
+    <task id="LOCAL-00001" summary="整合UEditor 以ocPortal模块为准">
+      <created>1552620762573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552620762574</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="203603000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5013405" side_tool="true" weight="0.18987341" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.45428973" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3150134" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.09450402" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40225035" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.47960618" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.53867793" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.52859133" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5668073" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.19839142" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="BPMNPalette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.278481" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.22136332" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.3867792" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32884097" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25202155" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.502008" side_tool="true" weight="0.22136332" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.574124" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.4811321" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="BPMNPalette" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.17217147" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.2881237" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.42587602" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.13207547" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
+    <MESSAGE value="整合UEditor 以ocPortal模块为准" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合UEditor 以ocPortal模块为准" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocWechat/src/main/java/com/online/college/wechat/controller/AuthController.java</url>
+          <line>49</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/Desktop/ueditor/utf8-jsp/jsp/lib/ueditor-1.1.2.jar!/com/baidu/ueditor/ActionEnter.class</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/baidu/ueditor/upload/BinaryUploader.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/baidu/ueditor/ConfigManager.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/SiteCarouselController.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="31" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>notice</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>noticeList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>menuDao.getById(id)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>id</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>menuService.getById(id)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>getId</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>var6</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>savePath</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.jsonConfig.get(&quot;saveRootPath &quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/c4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/c5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/followed.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/following.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/header1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/header.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/static/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="207" column="97" selection-start-line="207" selection-start-column="97" selection-end-line="207" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/ico.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/main-bg-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/main-bg-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/main-bg-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/i/course.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_consts_classify">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_consts_college">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_consts_dictionary">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_consts_site_carousel">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_course_comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_course_section">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_user_collections">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_user_follows">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_user_message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-398">
+          <caret line="166" column="47" lean-forward="true" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="47" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/user/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/menu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_user_course_section">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="1240" lean-forward="true" selection-start-line="1240" selection-end-line="1240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/readComment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/common/tailPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/res/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="1053" column="16" lean-forward="true" selection-start-line="1053" selection-start-column="16" selection-end-line="1053" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="35" column="76" lean-forward="true" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/common/res.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="809" column="12" lean-forward="true" selection-start-line="809" selection-start-column="12" selection-end-line="809" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ocOperator:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ant-1.9.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ocCommon</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

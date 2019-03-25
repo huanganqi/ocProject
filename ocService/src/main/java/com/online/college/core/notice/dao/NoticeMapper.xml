@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://10.20.91.130/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.online.college.core.notice.dao.NoticeDao">
+
+    <resultMap id="BeanResultMap" type="com.online.college.core.notice.entity.Notice">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+    <sql id="All_Columns">
+        id,title,content,status,create_time,update_time
+    </sql>
+
+    <select id="queryAll" parameterType="com.online.college.core.notice.entity.Notice" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM notice
+    </select>
+
+    <select id="queryById" parameterType="INTEGER"
+            resultType="com.online.college.core.notice.entity.Notice">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM notice
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="id != null">
+                AND id = #{id, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+    <update id="update" parameterType="com.online.college.core.notice.entity.Notice">
+        update notice
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="title != null ">
+                title = #{title, jdbcType=VARCHAR},
+            </if>
+            <if test="content != null ">
+                content = #{content, jdbcType=INTEGER},
+            </if>
+        </trim>
+        WHERE id = #{id, jdbcType = INTEGER}
+    </update>
+
+    <insert id="save" parameterType="com.online.college.core.notice.entity.Notice" flushCache="true"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO notice
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title != null ">
+                title,
+            </if>
+            <if test="content != null ">
+                content,
+            </if>
+            <if test="status != null ">
+                status,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title != null ">
+                #{title, jdbcType=VARCHAR},
+            </if>
+            <if test="content != null ">
+                #{content, jdbcType=VARCHAR},
+            </if>
+            <if test="status != null ">
+                #{status, jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="delete" parameterType="com.online.college.core.notice.entity.Notice">
+        DELETE
+        FROM notice
+        WHERE id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <select id="getTotalItemsCount" parameterType="com.online.college.core.notice.entity.Notice" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM notice
+        WHERE 1=1
+        <if test="title != null">
+            AND title like CONCAT('%',#{title},'%' )
+        </if>
+        <if test="status != null">
+            AND status = #{status }
+        </if>
+    </select>
+
+    <select id="queryPage" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns" />
+        FROM notice
+        WHERE del = 0
+        <if test="param1.title != null">
+            AND title like CONCAT('%',#{param1.title},'%' )
+        </if>
+        <if test="param1.status != null">
+            AND status = #{param1.status}
+        </if>
+        ORDER BY create_time desc
+        LIMIT #{param2.startIndex, jdbcType=INTEGER} , #{param2.pageSize, jdbcType=INTEGER}
+    </select>
+
+</mapper>

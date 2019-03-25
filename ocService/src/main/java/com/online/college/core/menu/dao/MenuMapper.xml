@@ -6,7 +6,8 @@
     <resultMap id="BeanResultMap" type="com.online.college.core.menu.domain.Menu">
         <id column="id" property="id" jdbcType="INTEGER"/>
         <result column="menu_name" property="menuName" jdbcType="VARCHAR"/>
-        <result column="div_id" property="divId" jdbcType="VARCHAR"/>
+        <result column="url" property="url" jdbcType="VARCHAR"/>
+        <result column="target" property="target" jdbcType="VARCHAR"/>
         <result column="clazz_name" property="clazzName" jdbcType="VARCHAR"/>
         <result column="is_show" property="isShow" jdbcType="INTEGER"/>
         <result column="type" property="type" jdbcType="INTEGER"/>
@@ -14,10 +15,10 @@
 
 
     <sql id="All_Columns">
-        id,menu_name,div_id,clazz_name,is_show,type
+        id,menu_name,url,clazz_name,is_show,type,target
     </sql>
 
-    <select id="queryAll" parameterType="INTEGER" resultMap="BeanResultMap">
+    <select id="querySelective" parameterType="INTEGER" resultMap="BeanResultMap">
         SELECT
         <include refid="All_Columns"/>
         FROM menu
@@ -26,6 +27,12 @@
                 AND is_show = #{isShow, jdbcType=INTEGER}
             </if>
         </trim>
+    </select>
+
+    <select id="queryAll" parameterType="INTEGER" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM menu
     </select>
 
     <select id="getById" parameterType="INTEGER"
@@ -39,5 +46,19 @@
             </if>
         </trim>
     </select>
+
+    <update id="update" parameterType="com.online.college.core.menu.domain.Menu">
+        update menu
+        <trim prefix="SET" suffixOverrides="," >
+            <if test="menuName != null ">
+                menu_name = #{menuName, jdbcType=VARCHAR},
+            </if>
+            <if test="isShow != null ">
+                is_show = #{isShow, jdbcType=INTEGER},
+            </if>
+        </trim>
+        WHERE id = #{id, jdbcType = INTEGER}
+    </update>
+
 
 </mapper>

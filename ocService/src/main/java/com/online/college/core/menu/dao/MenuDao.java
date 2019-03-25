@@ -15,11 +15,30 @@ import java.util.List;
  **/
 public interface MenuDao {
 
-    Menu getById(Long id);
+    Menu getById(@Param("id") Long id);
 
-    List<Menu> queryAll(@Param("isShow") Integer isShow);
+    /**
+     * 查询展示的menu
+     * @param isShow
+     * @return
+     */
+    List<Menu> querySelective(@Param("isShow") Integer isShow);
 
+    /**
+     * 查询全部menu
+     * @return
+     */
+    List<Menu> queryAll();
+
+    /**
+     * 修改
+     * @param menu
+     */
     void update(Menu menu);
 
+    /**
+     *
+     * @param menu
+     */
     void updateSelectivity(Menu menu);
 }

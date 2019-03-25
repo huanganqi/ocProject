@@ -160,10 +160,32 @@ public class PortalController {
 
         //获取栏目
         Menu menu = new Menu();
-        List<Menu> menus = this.menuService.queryAll(1);
+        List<Menu> menus = this.menuService.queryShow(1);
         mv.addObject("menuList",menus);
 
         return mv;
     }
+
+
+    @RequestMapping(value = "/redDownload")
+    public ModelAndView toResDownLoad(){
+        ModelAndView mv = new ModelAndView("download/list.html");
+        return mv;
+    }
+
+    @RequestMapping(value = "/workUpload")
+    public ModelAndView toWorkUpload(){
+        ModelAndView mv = new ModelAndView("work/list.html");
+        return mv;
+    }
+
+
+    @RequestMapping(value = "/notice")
+    public ModelAndView toNotice(){
+        ModelAndView mv = new ModelAndView("notice/list.html");
+        return mv;
+    }
+
+
 }
 

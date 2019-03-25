@@ -802,11 +802,18 @@ input[type="text"],input[type="password"] {
 	margin: 0em;
 	line-height: 1.5em;
 }
-.modal-dialog{        
-    margin-top: 0px; 
- 	display: table-cell; 
- 	vertical-align: middle; 
- 	margin: 0px 20px; 
+.modal-dialog{
+
+	margin: auto;
+	/* display: inline; */
+	position: fixed;
+	left: 0;
+	right: 0;
+
+	/*margin-top: 0px; */
+ 	/*display: table-cell; */
+ 	/*vertical-align: middle; */
+ 	/*margin: 0px 20px; */
 }
 .w-8{
 	width: 800px;
@@ -1171,4 +1178,69 @@ table.table.list tr:first-child td {
 	background-color: #CCC;
 	cursor: point;
 }
+
+/**
+* 表单-start
+**/
+.oc-form{
+	padding-left: 20px;
+}
+
+.oc-form li{
+	height: 40px;
+	line-height: 40px;
+	padding-right:30px;
+	margin-bottom: 15px;
+	clear: both;
+	list-style-type: none;
+}
+
+.oc-form li label{
+	width:150px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	margin-right: 20px;
+	background-color: #F3F5F7;
+	display: inline-block;
+	float: left;
+}
+
+.oc-form li .display-text{
+	float: left;
+	height:40px;
+	line-height:40px;
+	width: 700px;
+	padding-left: 20px;
+	border-bottom: 1px solid #d9dde1;
+}
+
+.oc-form li .input-text{
+	float: left;
+	height:40px;
+	line-height:40px;
+	width: 300px;
+	padding-left: 5px;
+	border: 1px solid #d9dde1;
+}
+.oc-form li .input-text2{
+	float: left;
+	height:40px;
+	line-height:40px;
+	width: 60%;
+	padding-left: 5px;
+	border:none;
+	border-bottom: 1px solid #d9dde1;
+}
+.oc-form li .input-select{
+	float: left;
+	height:40px;
+	line-height:40px;
+	width: 60%;
+	padding-left: 5px;
+	border: 1px solid #d9dde1;
+}
+/**
+*form 表单 end
+**/
 

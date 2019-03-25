@@ -56,7 +56,7 @@
 				/auth/** = anon
 				/auth/logout.html = logout 
 				
-				/** = authc
+				/** = anon
 			</value>
 		</property>
 	</bean>

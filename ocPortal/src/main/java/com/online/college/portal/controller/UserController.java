@@ -1,7 +1,10 @@
 package com.online.college.portal.controller;
 
 import java.io.IOException;
+import java.util.List;
 
+import com.online.college.core.menu.domain.Menu;
+import com.online.college.core.menu.service.IMenuService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -46,6 +49,9 @@ public class UserController {
 	
 	@Autowired
 	private ICourseCommentService courseCommentService;
+
+	@Autowired
+	private IMenuService menuService;
 	
 	/**
 	 * 首页
@@ -66,6 +72,10 @@ public class UserController {
 				item.setHeader(QiniuStorage.getUrl(item.getHeader()));
 			}
 		}
+		//获取栏目
+		Menu menu = new Menu();
+		List<Menu> menus = this.menuService.queryShow(1);
+		mv.addObject("menuList",menus);
 		mv.addObject("page", page);
 		
 		return mv;

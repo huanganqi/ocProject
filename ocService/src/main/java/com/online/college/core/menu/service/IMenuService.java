@@ -14,9 +14,13 @@ import java.util.List;
 
 public interface IMenuService {
 
-    List<Menu> queryAll(Integer isShow);
+    List<Menu> queryShow(Integer isShow);
+
+    List<Menu> queryAll();
 
     Menu getById(Long id);
+
+    void update(Menu menu);
 
 
 }

@@ -14,10 +14,11 @@ public class Menu extends BaseEntity {
 
     private Long id;
     private String menuName;
-    private String divId;
+    private String url;
     private String clazzName;
     private Integer isShow;
     private Integer type;
+    private String target;
 
     @Override
     public Long getId() {
@@ -54,12 +55,20 @@ public class Menu extends BaseEntity {
         this.isShow = isShow;
     }
 
-    public String getDivId() {
-        return divId;
+    public String getUrl() {
+        return url;
     }
 
-    public void setDivId(String divId) {
-        this.divId = divId;
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getTarget() {
+        return target;
+    }
+
+    public void setTarget(String target) {
+        this.target = target;
     }
 
     public Integer getType() {

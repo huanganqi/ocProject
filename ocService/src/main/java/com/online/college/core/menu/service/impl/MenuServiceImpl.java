@@ -25,8 +25,17 @@ public class MenuServiceImpl implements IMenuService {
 
 
     @Override
-    public List<Menu> queryAll(Integer isShow) {
-        List<Menu> menus = menuDao.queryAll(isShow);
+    public List<Menu> queryShow(Integer isShow) {
+        List<Menu> menus = menuDao.querySelective(isShow);
+        if (!menus.isEmpty()) {
+            return menus;
+        }
+        return null;
+    }
+
+    @Override
+    public List<Menu> queryAll() {
+        List<Menu> menus = menuDao.queryAll();
         if (!menus.isEmpty()) {
             return menus;
         }
@@ -40,5 +49,10 @@ public class MenuServiceImpl implements IMenuService {
             return menu;
         }
         return null;
+    }
+
+    @Override
+    public void update(Menu menu) {
+        menuDao.update(menu);
     }
 }
