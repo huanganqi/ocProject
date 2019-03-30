@@ -66,5 +66,14 @@ public class NoticeController {
         return new JsonView(0).toString();
     }
 
+    @RequestMapping(value = "/info")
+    @ResponseBody
+    public ModelAndView info(Notice notice){
+        ModelAndView mv = new ModelAndView("cms/notice/update");
+        Notice notice1=noticeService.queryById(notice.getId());
+        mv.addObject("info", notice1);
+        return mv;
+    }
+
 
 }

@@ -62,7 +62,9 @@
                                     <#if (page.items)??>
                                     <#list page.items as item>
                                     <tr>
-                                        <td>${item.title!""}</td>
+                                        <td>
+                                            <a class="link-a" href="${s.base}/notice/info.html?id=${item.id}"> ${item.title!""}</a>
+                                        </td>
                                         <td>${(item.updateTime)?string("yyyy-MM-dd HH:mm:ss")}</td>
                                     </tr>
                                     </#list>

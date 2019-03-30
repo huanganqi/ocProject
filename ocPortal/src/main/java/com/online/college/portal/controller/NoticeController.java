@@ -86,8 +86,6 @@ public class NoticeController {
         Notice notice1=noticeService.queryById(notice.getId());
         mv.addObject("info", notice1);
         return mv;
-
-
     }
 
 
