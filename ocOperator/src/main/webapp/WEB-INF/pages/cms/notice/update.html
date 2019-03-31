@@ -27,22 +27,27 @@
                     <div class="form-group clearfix">
                         <label class="control-label">标题</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control"  id="title" placeholder="请输入名称">
+                            <input type="text" class="form-control"  id="title" placeholder="请输入名称" value="${info.title}">
                         </div>
                     </div>
                     <div class="form-group clearfix">
                         <label class="control-label" >状态</label>
                         <div class="col-sm-4">
                             <select id="status" name="status" class="form-control"  type="select">
-                                <option value="1">发布</option>
-                                <option value="0">废弃</option>
+                                <#if info.status==1>
+                                    <option value="1" selected="selected">发布</option>
+                                    <option value="0">废弃</option>
+                                <#else>
+                                    <option value="1" >发布</option>
+                                    <option value="0" selected="selected" >废弃</option>
+                                </#if>
                             </select>
                         </div>
                     </div>
                     <div class="form-group clearfix">
                         <label class="control-label" >正文</label>
                         <div class="col-sm-4">
-                            <script id="editor" type="text/plain" style="width:1024px;height:500px;">${info.}</script></div>
+                            <script id="editor" type="text/plain" style="width:1024px;height:500px;">${info.content}</script></div>
                         </div>
                     <div class="form-group clearfix" style="height:50px;">
                         <label class="control-label" ></label>
@@ -68,7 +73,8 @@
             data:{
                 title:$("#title").val(),
                 content:UE.getEditor('editor').getContent(),
-                status:$("#status").val()
+                status:$("#status").val(),
+                id:${info.id}
             },
             success : function(resp) {
                 var resp = $.parseJSON(resp);

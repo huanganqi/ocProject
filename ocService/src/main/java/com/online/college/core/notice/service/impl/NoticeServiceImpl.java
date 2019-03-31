@@ -29,7 +29,11 @@ public class NoticeServiceImpl implements NoticeService {
     @Override
     public boolean save(Notice notice) {
         try {
-            noticeDao.save(notice);
+            if (notice.getId() != null) {
+                noticeDao.update(notice);
+            } else {
+                noticeDao.save(notice);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return false;
@@ -67,7 +71,7 @@ public class NoticeServiceImpl implements NoticeService {
     @Override
     public TailPage<Notice> queryPage(Notice notice, TailPage<Notice> page) {
         Integer itemsTotalCount = noticeDao.getTotalItemsCount(notice);
-        List<Notice> items = noticeDao.queryPage(notice,page);
+        List<Notice> items = noticeDao.queryPage(notice, page);
         page.setItemsTotalCount(itemsTotalCount);
         page.setItems(items);
         return page;

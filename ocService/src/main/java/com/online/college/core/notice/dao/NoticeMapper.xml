@@ -42,7 +42,10 @@
                 title = #{title, jdbcType=VARCHAR},
             </if>
             <if test="content != null ">
-                content = #{content, jdbcType=INTEGER},
+                content = #{content, jdbcType=VARCHAR},
+            </if>
+            <if test="status != null ">
+                status = #{status, jdbcType=INTEGER},
             </if>
         </trim>
         WHERE id = #{id, jdbcType = INTEGER}

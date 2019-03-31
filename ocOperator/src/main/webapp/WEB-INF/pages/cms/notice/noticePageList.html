@@ -39,6 +39,9 @@
 							<!--<button class="search-btn" type="button" onclick="create()" >新增</button>-->
 							<input type="button" class="search-btn" onclick="window.location.href='${s.base}/notice/add.html'" value=" + 新增通知公告 " />
 						</p>
+						<div  id="successAlert"  class="alert alert-success" style="display:none;float:right;margin-left:50px;margin-top:-45px;">
+							<span id="successAlert_msg" class="color-oc f-16">删除成功！</span>
+						</div>
 					</div>
 				</div>
 
@@ -74,8 +77,8 @@
 										<td>${(item.createTime)?string("yyyy-MM-dd HH:mm:ss")}</td>
 										<td>${(item.updateTime)?string("yyyy-MM-dd HH:mm:ss")}</td>
 										<td>
-											<a class="link-a" href="javascript:void(0)" onclick="toEdit(${item.id});">修改</a>
-											<a class="link-a" href="javascript:void(0)" onclick="toEdit(${item.id});">删除</a>
+											<a class="link-a" href="${s.base}/notice/update.html?id=${item.id}" onclick="toEdit(${item.id});">修改</a>
+											<a class="link-a" href="javascript:void(0)" onclick="doDel(${item.id});">删除</a>
 											<a class="link-a" href="javascript:void(0)" onclick="toEdit(${item.id});">预览</a>
 										</td>
 									</tr>
@@ -187,6 +190,27 @@
                 }
 			});
 		}
+
+        //删除
+        function doDel(id){
+            $.ajax({
+                url:'${s.base}/notice/delete.html',
+                datatype : 'json',
+                data:{"id":id},
+                success : function(resp) {
+                    var resp = $.parseJSON(resp);
+                    if (resp.errcode == 0) {
+                        $("#successAlert").show().fadeOut(2500);//显示模态框
+                        $('#failureMsg').html('');
+                        window.location.href='${s.base}/notice/queryNotice.html';
+                    } else if(resp.errcode == 1) {
+                        $('#failureMsg').html('保存失败');
+                    }
+                },
+                error : function(xhr) {
+                }
+            });
+        }
 
 
 	</script>

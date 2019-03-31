@@ -66,7 +66,7 @@ public class NoticeController {
         return new JsonView(0).toString();
     }
 
-    @RequestMapping(value = "/info")
+    @RequestMapping(value = "/update")
     @ResponseBody
     public ModelAndView info(Notice notice){
         ModelAndView mv = new ModelAndView("cms/notice/update");
@@ -75,5 +75,11 @@ public class NoticeController {
         return mv;
     }
 
+    @RequestMapping(value = "/delete")
+    @ResponseBody
+    public String delete(Notice notice){
+        noticeService.delete(notice.getId());
+        return new JsonView(0).toString();
+    }
 
 }
