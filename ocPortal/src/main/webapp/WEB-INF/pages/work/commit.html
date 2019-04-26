@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>作业提交</title>
+    <#include "../common/res.html">
+</head>
+
+<body>
+<#include "../common/header.html">
+<div class="f-main clearfix">
+    <div class="setting-left">
+
+        <#if courseTeacher??>
+        <div class="lecturer-item" style="width: 100%;">
+            <#if courseTeacher.header?? && courseTeacher.header != ''>
+            <img class="lecturer-uimg" src="${courseTeacher.header!}">
+            <#else>
+            <img class="lecturer-uimg" src="${s.base}/res/i/header.jpg">
+        </#if>
+        <span class="lecturer-name">${(courseTeacher.realname)!""}</span>
+        <span class="lecturer-title">${(courseTeacher.collegeName)!""} · ${(courseTeacher.education)!""}</span>
+        <span class="lecturer-p" >${(courseTeacher.title)!""}，${(courseTeacher.sign)!""}</span>
+    </div>
+</#if>
+</div>
+
+<div class="setting-right"  >
+    <div class="content" style="margin-left: 0px;border-left: none; overflow-y: auto">
+        <div class="container-fluid">
+            <div class="block span6">
+                <div class="block-body collapse in" style="padding-top:10px;">
+                    <a class="block-heading f-14" data-toggle="collapse" style="font-size: 15px;">${info.title}</a>
+                    <form role="form" id="workForm" method="post" action="${s.base}/work/stuSave.html"  enctype="multipart/form-data">
+
+
+                        <div class="form-group clearfix" style="margin-top: 15px;">
+                            <label class="control-label" >要求</label>
+                            <div class="col-sm-4" style="margin-top: 5px;">
+                                    ${info.require}
+                            </div>
+                        </div>
+
+                        <div class="form-group clearfix" style="margin-top: 15px;">
+                            <label class="control-label" >分数</label>
+                            <div class="col-sm-4" style="margin-top: 5px;">
+                                <#if (work.score)?? >
+                                    ${work.score}
+                                <#else>
+                                    未批阅
+                                </#if>
+                            </div>
+                        </div>
+
+                        <!--editorCommit-->
+                        <div class="form-group clearfix">
+                            <label class="control-label" >内容</label>
+                            <div class="col-sm-4">
+                                <script id="editorCommit" type="text/plain" style="width:700px;height:350px;" >
+                                    <#if (work.content)??>
+                                        ${work.content}
+                                    </#if>
+                                </script></div>
+                        </div>
+                        <!--end-->
+
+                        <div class="form-group clearfix" style="height:50px;">
+                            <label class="control-label" ></label>
+                            <div class="col-sm-4">
+                                <#if (work.score)?? >
+                                    <input type="button" class="search-btn" onclick="doSave();" value="提交"  disabled="disabled"  style="float:left;height:40px; background-color:#A9A9A9"/>
+                                <#else>
+                                    <input type="button" class="search-btn" onclick="doSave();" value="提交"  style="float:left;height:40px;"/>
+                                </#if>
+                                <div  id="successAlert"  class="alert alert-success" style="display:none;float:left;margin-left:50px;margin-top:0px;">
+                                    <span id="successAlert_msg" class="color-oc f-16">保存成功！</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom:5px;"><span id="failureMsg" style="color:red;"></span></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+<#include "../common/footer.html">
+
+<script type="application/javascript">
+
+    $(function(){
+        UE.getEditor('editor').setDisabled('fullscreen');
+        disableBtn("enable");
+    });
+
+
+    function doSave(){
+
+   $.ajax({
+            url: '${s.base}/work/stuSave.html',
+            type: 'POST',
+            datatype : 'json',
+            data: {
+                "content":UE.getEditor('editorCommit').getContent() ,
+                "workId": '${info.id}'
+            },
+            success : function(resp) {
+                var resp = $.parseJSON(resp);
+                if (resp.errcode == 0) {
+                    $("#successAlert").show().fadeOut(2500);//显示模态框
+                    $('#failureMsg').html('');
+                } else {
+                    $('#failureMsg').html('保存失败');
+                }
+            },
+            error: function(){
+                Modal.tipFailure('保存失败');
+                //alert(arguments[0].responseText);
+            }
+        });
+    }
+
+</script>
+</body>
+
+</html>

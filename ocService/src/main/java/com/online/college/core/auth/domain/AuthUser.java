@@ -14,12 +14,14 @@ public class AuthUser extends BaseEntity implements SessionUser{
 	private static final long serialVersionUID = 94044276250229411L;
 	
 	/**
-	*登录用户名
+	*真实姓名
 	**/
 	private String realname;
 
+	private Integer role;
+
 	/**
-	*真实姓名
+	*登录用户名
 	**/
 	private String username;
 
@@ -306,6 +308,13 @@ public class AuthUser extends BaseEntity implements SessionUser{
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
-	
+
+	public Integer getRole() {
+		return role;
+	}
+
+	public void setRole(Integer role) {
+		this.role = role;
+	}
 }
 

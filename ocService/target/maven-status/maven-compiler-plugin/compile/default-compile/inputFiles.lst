@@ -5,11 +5,13 @@ D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\s
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\dao\CourseDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\service\impl\CourseServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\service\IUserCollectionsService.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\service\TeacherWorkService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\dao\ConstsClassifyDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\domain\UserFollows.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\domain\UserFollowStudyRecord.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\auth\service\impl\AuthUserServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\service\IConstsClassifyService.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\notice\dao\NoticeDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\dao\CourseCommentDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\menu\service\impl\MenuServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\service\ICourseCommentService.java
@@ -17,8 +19,10 @@ D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\s
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\service\impl\ConstsCollegeServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\auth\dao\AuthUserDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\service\ICourseSectionService.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\service\StudentWorkService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\service\IConstsCollegeService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\dao\ConstsSiteCarouselDao.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\entity\TeacherHomeWork.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\service\impl\ConstsSiteCarouselServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\statics\dao\CourseStudyStaticsDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\dao\UserCourseSectionDao.java
@@ -26,10 +30,12 @@ D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\service\impl\UserCollectionsServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\statics\domain\StaticsVO.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\service\impl\CourseCommentServiceImpl.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\dao\TeacherWorkDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\service\impl\UserCourseSectionServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\service\IUserMessageService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\menu\dao\MenuDao.java
-D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\rez\domain\Resource.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\notice\entity\Notice.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\entity\StudentHomeWork.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\service\impl\CourseSectionServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\service\IConstsSiteCarouselService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\domain\CourseSection.java
@@ -41,8 +47,12 @@ D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\static
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\statics\domain\CourseStudyStaticsDto.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\dao\UserMessageDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\auth\domain\AuthUser.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\dao\StudentWorkDao.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\notice\service\NoticeService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\service\impl\ConstsClassifyServiceImpl.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\notice\service\impl\NoticeServiceImpl.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\domain\UserCollections.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\service\impl\StudentWorkService.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\domain\CourseQueryDto.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\course\domain\CourseComment.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\web\IdentifyCodeController.java
@@ -60,3 +70,4 @@ D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\static
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\dao\UserCollectionsDao.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\user\domain\UserMessage.java
 D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\consts\domain\ConstsClassify.java
+D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\service\impl\TeacherWorkServiceImpl.java

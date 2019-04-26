@@ -251,12 +251,16 @@ console.log(menuList);
 					window.location.reload();
 				} else if(resp.errcode == 1) {
 					$('#loginError').show();
-					$('#loginError').html("用户名密码错");
+					$('#loginError').html("用户名或密码错误");
 				}else if(resp.errcode == 2){
 					$('#loginError').show();
 					$('#loginError').html("验证码输入错误！");
 					reloadIndityImg('indeityImgHead1');
-				}
+				}else if(resp.errcode == 3){
+                    $('#loginError').show();
+                    $('#loginError').html("用户被禁用");
+                    reloadIndityImg('indeityImgHead1');
+                }
 			},
 			error : function(xhr) {
 			}

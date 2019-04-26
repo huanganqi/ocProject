@@ -30,13 +30,96 @@
 </div>
 
 <div class="setting-right"  >
-    <div><span class="f-16">作业上传</span></div>
+    <div><span class="f-16">资源下载</span></div>
     <div class="split-line" style="margin: 20px 0px;"></div>
+
+    <div class="content" style="margin-left: 0px;border-left:#FFFF">
+        <div class="container-fluid pt-10" >
+            <div class="panel panel-5" >
+                <a class="block-heading f-14" data-toggle="collapse">目录</a>
+                <div class="block-body collapse in">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>目录</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <#if (page.items)??>
+                        <#list page.items as item>
+                        <tr class="tr-bg-gray" code="${item.id!}">
+                            <td>${item.directoryName!""}</td>
+                        </tr>
+                        </#list>
+                    </#if>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-5" >
+                <a class="block-heading f-14" data-toggle="collapse">文件</a>
+                <div class="block-body collapse in">
+                    <table id="subClassifysTable" class="table">
+                        <thead>
+                        <tr name="th">
+                            <th>文件名</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <#if (filePage.items)??>
+                        <#list filePage.items as item>
+                        <tr code="${item.id!}" parentCode="${item.fileParentId!}">
+                            <td>${item.fileName!""}</td>
+                            <td>
+                            <#if item.fileName ?? >
+
+                                <a class="link-a" href="javascript:void(0)" onclick="toDownload('${item.filePath?js_string}')">下载</a>
+                            </#if>
+                            </td>
+                        </tr>
+                        </#list>
+                    </#if>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 </div>
 </div>
 <#include "../common/footer.html">
+
+<script type="text/javascript">
+    $(function(){
+        //一级分类点击，过滤二级分类
+        $('.tr-bg-gray').click(function(){
+            var code = $(this).attr('code');
+            $('#subClassifysTable').find('tr').each(function(i,item){
+                if($(item).attr('parentCode') == code){
+                    $(item).show();
+                }else{
+                    if($(item).attr('name') != 'th'){
+                        $(item).hide();
+                    }
+                }
+            });
+        });
+    });
+
+    function toDownload(path){
+        console.log("This is toDownload path = "+path);
+        path = "http://localhost:8080/data/"+path.substr(7);
+        console.log(path);
+        window.location.href=path;
+    }
+</script>
+
+
 
 </body>
 </html>

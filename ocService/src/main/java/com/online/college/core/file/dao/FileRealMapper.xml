@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://10.20.91.130/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.online.college.core.file.dao.FileRealDao">
+
+    <resultMap id="BeanResultMap" type="com.online.college.core.file.entity.FileReal">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="file_name" property="fileName" jdbcType="VARCHAR"/>
+        <result column="file_path" property="filePath" jdbcType="VARCHAR"/>
+        <result column="file_parent_id" property="fileParentId" jdbcType="INTEGER"/>
+        <result column="file_size" property="fileSize" jdbcType="VARCHAR"/>
+        <result column="file_type" property="fileType" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+    <sql id="All_Columns">
+        id,file_name,file_path,file_parent_id,file_size,file_type,create_time,update_time
+    </sql>
+
+    <select id="selectById" parameterType="INTEGER"
+            resultType="com.online.college.core.file.entity.FileReal">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM file_real
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="id != null">
+                AND id = #{id, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+    <update id="update" parameterType="com.online.college.core.file.entity.FileReal">
+        update file_real
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="fileName != null ">
+                file_name = #{fileName, jdbcType=VARCHAR},
+            </if>
+            <if test="fileParentId != null ">
+                file_parent_id = #{fileParentId, jdbcType=VARCHAR},
+            </if>
+            <if test="filePath != null ">
+                file_path = #{filePath, jdbcType=VARCHAR},
+            </if>
+        </trim>
+        WHERE id = #{id, jdbcType = INTEGER}
+    </update>
+
+    <insert id="save" parameterType="com.online.college.core.file.entity.FileReal" flushCache="true"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO file_real
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="fileName != null ">
+                file_name,
+            </if>
+            <if test="fileParentId != null ">
+                file_parent_id,
+            </if>
+            <if test="filePath != null ">
+                file_path,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="fileName != null ">
+                #{fileName, jdbcType=VARCHAR},
+            </if>
+            <if test="fileParentId != null ">
+                #{fileParentId, jdbcType=INTEGER},
+            </if>
+            <if test="filePath != null ">
+                #{filePath, jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="delete" parameterType="com.online.college.core.file.entity.FileReal">
+        DELETE
+        FROM file_real
+        WHERE id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <select id="getTotalItemsCount" parameterType="com.online.college.core.file.entity.FileReal"
+            resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM file_real
+        WHERE 1=1
+    </select>
+
+    <select id="selectForPage" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM file_real
+        WHERE del = 0
+        ORDER BY create_time desc
+        LIMIT #{param2.startIndex, jdbcType=INTEGER} , #{param2.pageSize, jdbcType=INTEGER}
+    </select>
+
+    <select id="selectByParentId" parameterType="INTEGER"
+            resultType="com.online.college.core.file.entity.FileReal">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM file_real
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="fileParentId != null">
+                AND file_parent_id = #{fileParentId, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

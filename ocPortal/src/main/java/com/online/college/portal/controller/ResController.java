@@ -1,10 +1,15 @@
 package com.online.college.portal.controller;
 
+import com.online.college.common.page.TailPage;
 import com.online.college.common.storage.QiniuStorage;
 import com.online.college.core.auth.domain.AuthUser;
 import com.online.college.core.auth.service.IAuthUserService;
 import com.online.college.core.course.domain.Course;
 import com.online.college.core.course.service.ICourseService;
+import com.online.college.core.file.entity.FileParent;
+import com.online.college.core.file.entity.FileReal;
+import com.online.college.core.file.service.FileParentService;
+import com.online.college.core.file.service.FileRealService;
 import com.online.college.portal.business.ICourseBusiness;
 import com.online.college.portal.vo.CourseSectionVO;
 import org.apache.commons.lang.StringUtils;
@@ -35,8 +40,14 @@ public class ResController {
     @Autowired
     private IAuthUserService authUserService;
 
+    @Autowired
+    private FileRealService fileRealService;
+
+    @Autowired
+    private FileParentService fileParentService;
+
     @RequestMapping("/list")
-    public ModelAndView list(){
+    public ModelAndView list(FileParent fileParent, TailPage<FileParent> page){
         ModelAndView mv = new ModelAndView("res/list");
 
         Long courseId = Long.valueOf(1);
@@ -53,6 +64,18 @@ public class ResController {
         }
         mv.addObject("courseTeacher", courseTeacher);
 
+        // 1. 查询目录
+        page = fileParentService.findAllForPage(fileParent, page);
+        mv.addObject("queryEntity", fileParent);
+        mv.addObject("page", page);
+
+
+        // 2. 查询文件
+        FileReal fileReal = new FileReal();
+        TailPage<FileReal> fileRealTailPage = new TailPage<>();
+        fileRealTailPage = fileRealService.selectForPage(fileReal, fileRealTailPage);
+        mv.addObject("fileReal", fileParent);
+        mv.addObject("filePage", fileRealTailPage);
         return mv;
     }
 }

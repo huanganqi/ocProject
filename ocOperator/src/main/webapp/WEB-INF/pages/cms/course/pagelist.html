@@ -29,12 +29,6 @@
 	                	<#if page.sortDirection == 'DESC'><span>▼</span><#else><span>▲</span></#if>
 	                	</#if>
                 	</a>
-                	<a href="javascript:void(0)" sortField="weight" class="search-sort-block <#if page.sortField?? && page.sortField == 'weight'>search-sort-block-cur</#if>" >
-                		<span>推荐权重</span>
-                		<#if page.sortField?? && page.sortField == 'weight'>
-	                	<#if page.sortDirection == 'DESC'><span>▼</span><#else><span>▲</span></#if>
-	                	</#if>
-                	</a>
                 	<input type="hidden" id="sortField" name="sortField" value="${page.sortField!}" />
                 	<input type="hidden" id="sortDirection" name="sortDirection" value="${page.sortDirection!'DESC'}" />
                 	<input type="text" class="search-text" name="name" value="${(queryEntity.name)!}"  style="margin-top:5px;" placeholder="请输入课程名称">
@@ -68,28 +62,13 @@
 											</div> 
 										</p>
 									</td>
+
 									<td>
-										<p>${item.time!}</p>
-										<p style="color: red;">
-											<#if item.free == 1>免费<#else>￥${item.price!}</#if>
-										</p>
-										<p>
-										<#if item.level == 1>
-										初级
-										<#elseif item.level == 2>
-										中级
-										<#else>
-										高级
-										</#if>
-										</p>
-									</td>
-									<td>
-										<p>${item.classifyName!} / ${item.subClassifyName!}</p> 
+										<p>${item.classifyName!} / ${item.subClassifyName!}</p>
 										<p>${item.studyCount!}人在学</p>
 										<p>${item.updateTime?string('yyyy-MM-dd HH:mm')}</p>
 									</td>
 									<td style="width:120px;">
-										<p>推荐权重：${item.weight!}</p> 
 										<p><a href="javascript:void(0)" onclick="doSale(${item.id!},${item.onsale!});"><#if item.onsale == 1>课程下架<#else>发布上架</#if></a></p>
 										<p><a href="javascript:void(0)" onclick="doDelete(${item.id!});">删除</a></p> 
 									</td>

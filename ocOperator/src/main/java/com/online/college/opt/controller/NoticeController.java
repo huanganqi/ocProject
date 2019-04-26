@@ -41,8 +41,7 @@ public class NoticeController {
         if (Integer.valueOf(-1).equals(notice.getStatus())) {
             notice.setStatus(null);
         }
-
-
+        
         page = noticeService.queryPage(notice, page);
 
 

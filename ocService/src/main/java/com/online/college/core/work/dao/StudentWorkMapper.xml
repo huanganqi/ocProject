@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://10.20.91.130/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.online.college.core.work.dao.StudentWorkDao">
+
+    <resultMap id="BeanResultMap" type="com.online.college.core.work.entity.StudentHomeWork">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="stu_id" property="stuId" jdbcType="VARCHAR"/>
+        <result column="work_id" property="workId" jdbcType="INTEGER"/>
+        <result column="score" property="score" jdbcType="DOUBLE"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+    <sql id="All_Columns">
+        id,stu_id,work_id,score,content,create_time,update_time
+    </sql>
+
+    <select id="selectById" parameterType="INTEGER"
+            resultType="com.online.college.core.work.entity.StudentHomeWork">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM student_homework
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="id != null">
+                AND id = #{id, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+    <update id="update" parameterType="com.online.college.core.work.entity.StudentHomeWork">
+        update student_homework
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="content != null ">
+                content = #{content, jdbcType=VARCHAR},
+            </if>
+            <if test="score != null ">
+                score = #{score, jdbcType=VARCHAR},
+            </if>
+        </trim>
+        WHERE id = #{id, jdbcType = INTEGER}
+    </update>
+
+    <insert id="save" parameterType="com.online.college.core.work.entity.StudentHomeWork" flushCache="true"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO student_homework
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="stuId != null ">
+                stu_id,
+            </if>
+            <if test="content != null ">
+                content,
+            </if>
+            <if test="workId != null ">
+                work_id,
+            </if>
+            <if test="score != null ">
+                score,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="stuId != null ">
+                #{stuId, jdbcType=VARCHAR},
+            </if>
+            <if test="content != null ">
+                #{content, jdbcType=VARCHAR},
+            </if>
+            <if test="workId != null ">
+                #{workId, jdbcType=INTEGER},
+            </if>
+            <if test="score != null ">
+                #{score, jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="delete" parameterType="com.online.college.core.work.entity.StudentHomeWork">
+        DELETE
+        FROM student_homework
+        WHERE id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <select id="getTotalItemsCount" parameterType="com.online.college.core.work.entity.StudentHomeWork"
+            resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM student_homework
+        WHERE 1=1
+        <if test="stuId != null">
+            AND stu_id like CONCAT('%',#{stuId},'%' )
+        </if>
+    </select>
+
+    <select id="selectStudentWorkForPage" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM student_homework
+        WHERE del = 0
+        <if test="param1.stuId != null">
+            AND stu_id like CONCAT('%',#{param1.stuId},'%' )
+        </if>
+        ORDER BY create_time desc
+        LIMIT #{param2.startIndex, jdbcType=INTEGER} , #{param2.pageSize, jdbcType=INTEGER}
+    </select>
+
+    <select id="selectByWorkIdAndUserId" parameterType="INTEGER"
+            resultType="com.online.college.core.work.entity.StudentHomeWork">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM student_homework
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="workId != null">
+                AND work_id = #{workId, jdbcType=INTEGER}
+            </if>
+            <if test="stuId != null">
+                AND stu_id = #{stuId, jdbcType=VARCHAR}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

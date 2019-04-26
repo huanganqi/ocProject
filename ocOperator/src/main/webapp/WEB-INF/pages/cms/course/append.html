@@ -37,21 +37,6 @@
 										<p class="ellipsis-multi h-40" title="${course.brief!}">${course.brief!}</p>
 									</div> 
 								</td>
-								<td>
-										<p>${course.time!}</p>
-										<p style="color: red;">
-											<#if course.free == 1>免费<#else>￥${course.price!}</#if>
-										</p>
-										<p>
-										<#if course.level == 1>
-										初级
-										<#elseif course.level == 2>
-										中级
-										<#else>
-										高级
-										</#if>
-										</p>
-									</td>
 									<td>
 										<p>${course.classifyName!} / ${course.subClassifyName!}</p> 
 										<p>${course.studyCount!}人在学</p>
@@ -59,8 +44,7 @@
 										<p>${course.updateTime?string('yyyy-MM-dd HH:mm')}</p>
 									</td>
 									<td style="width:120px;">
-										<p>推荐权重：${course.weight!}</p> 
-										<p><a href="${s.base}/course/read.html?id=${course.id!}" >返回</a></p> 
+										<p><a href="${s.base}/course/read.html?id=${course.id!}" >返回</a></p>
 									</td>
 							</tr>
 						</tbody>

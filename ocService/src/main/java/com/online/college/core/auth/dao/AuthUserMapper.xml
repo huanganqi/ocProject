@@ -12,6 +12,7 @@
 		<result column="header" property="header"  jdbcType="VARCHAR" />
 		<result column="mobile" property="mobile"  jdbcType="VARCHAR" />
 		<result column="status" property="status"  jdbcType="INTEGER" />
+		<result column="role" property="role"  jdbcType="INTEGER" />
 		<result column="birthday" property="birthday"  jdbcType="DATE" />
 		<result column="education" property="education"  jdbcType="VARCHAR" />
 		<result column="college_code" property="collegeCode"  jdbcType="VARCHAR" />
@@ -40,7 +41,7 @@
 		status, birthday, education, college_code, college_name, cert_no, title, sign, 
 		open_id, wechat_id, qq, login_time, ip, province, 
 		city, district, weight, create_time, create_user, update_time, update_user, 
-		del, id 
+		del, id,role
 	</sql>
 	
 	<select id="getByUsername" parameterType="java.lang.String"  resultMap="BeanResultMap">

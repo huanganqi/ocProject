@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://10.20.91.130/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.online.college.core.file.dao.FileParentDao">
+
+    <resultMap id="BeanResultMap" type="com.online.college.core.file.entity.FileParent">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="directory_name" property="directoryName" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+        <collection property="fileRealList" ofType="com.online.college.core.file.entity.FileReal">
+            <id property="id" column="id"/>
+            <result property="fileName" column="file_name"/>
+        </collection>
+    </resultMap>
+
+
+    <sql id="All_Columns">
+        id,directory_name,create_time,update_time
+    </sql>
+
+    <select id="findById" parameterType="INTEGER"
+            resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM file_parent
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="id != null">
+                AND id = #{id, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+    <update id="updateDirectory" parameterType="com.online.college.core.work.entity.TeacherHomeWork">
+        update file_parent
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="directoryName != null ">
+                directory_name = #{directoryName, jdbcType=VARCHAR},
+            </if>
+        </trim>
+        WHERE id = #{id, jdbcType = INTEGER}
+    </update>
+
+    <insert id="createDirectory" parameterType="com.online.college.core.file.entity.FileParent" flushCache="true"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO file_parent
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="directoryName != null ">
+                directory_name
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="directoryName != null ">
+                #{directoryName, jdbcType=VARCHAR}
+            </if>
+        </trim>
+    </insert>
+
+    <delete id="delDirectory" parameterType="com.online.college.core.file.entity.FileParent">
+        DELETE
+        FROM file_parent
+        WHERE id = #{id, jdbcType=INTEGER}
+    </delete>
+
+    <select id="getTotalItemsCount" parameterType="com.online.college.core.file.entity.FileParent"
+            resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM file_parent
+        WHERE 1=1
+        <if test="directoryName != null">
+            AND directory_name like CONCAT('%',#{directoryName},'%' )
+        </if>
+    </select>
+
+    <select id="findAllForPage" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM file_parent
+        WHERE del = 0
+        <if test="param1.directoryName != null">
+            AND directory_name like CONCAT('%',#{param1.directoryName},'%' )
+        </if>
+        ORDER BY create_time desc
+        LIMIT #{param2.startIndex, jdbcType=INTEGER} , #{param2.pageSize, jdbcType=INTEGER}
+    </select>
+
+</mapper>
