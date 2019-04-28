@@ -8,6 +8,8 @@ import com.online.college.core.course.domain.CourseSection;
 import com.online.college.core.course.service.ICourseSectionService;
 import com.online.college.core.menu.domain.Menu;
 import com.online.college.core.menu.service.IMenuService;
+import com.online.college.core.sign.entity.Sign;
+import com.online.college.core.sign.service.SignService;
 import com.online.college.core.user.domain.UserCourseSection;
 import com.online.college.core.user.service.IUserCourseSectionService;
 import com.online.college.portal.business.ICourseBusiness;
@@ -61,6 +63,9 @@ public class PortalController {
 
     @Autowired
     private IMenuService menuService;
+
+    @Autowired
+    private SignService signService;
 
 
 //	/**
@@ -161,27 +166,38 @@ public class PortalController {
         //获取栏目
         Menu menu = new Menu();
         List<Menu> menus = this.menuService.queryShow(1);
-        mv.addObject("menuList",menus);
+        mv.addObject("menuList", menus);
 
+        //获取当前用户
+        Long userId = SessionContext.getUserId();
+        boolean isSign = false;
+        if (userId != null) {
+
+            AuthUser authUser = authUserService.getById(userId);
+            Sign entity = new Sign();
+            entity.setStuId(authUser.getUsername());
+            isSign = signService.isSign(entity);
+        }
+        mv.addObject("isSign", isSign);
         return mv;
     }
 
 
     @RequestMapping(value = "/redDownload")
-    public ModelAndView toResDownLoad(){
+    public ModelAndView toResDownLoad() {
         ModelAndView mv = new ModelAndView("download/list.html");
         return mv;
     }
 
     @RequestMapping(value = "/workUpload")
-    public ModelAndView toWorkUpload(){
+    public ModelAndView toWorkUpload() {
         ModelAndView mv = new ModelAndView("work/list.html");
         return mv;
     }
 
 
     @RequestMapping(value = "/notice")
-    public ModelAndView toNotice(){
+    public ModelAndView toNotice() {
         ModelAndView mv = new ModelAndView("notice/list.html");
         return mv;
     }

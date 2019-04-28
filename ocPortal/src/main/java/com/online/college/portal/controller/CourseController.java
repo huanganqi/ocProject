@@ -3,6 +3,8 @@ package com.online.college.portal.controller;
 import java.util.Date;
 import java.util.List;
 
+import com.online.college.core.sign.entity.Sign;
+import com.online.college.core.sign.service.SignService;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
@@ -49,7 +51,10 @@ public class CourseController {
 	
 	@Autowired
 	private IUserCourseSectionService userCourseSectionService;
-	
+
+
+	@Autowired
+	private SignService signService;
 	
 	/**
 	 * 课程章节页面
@@ -95,6 +100,18 @@ public class CourseController {
 			CourseSection curCourseSection = this.courseSectionService.getById(userCourseSection.getSectionId());
 			mv.addObject("curCourseSection", curCourseSection);
 		}
+
+		//获取当前用户
+		Long userId = SessionContext.getUserId();
+		boolean isSign = false;
+		if (userId != null) {
+
+			AuthUser authUser = authUserService.getById(userId);
+			Sign entity = new Sign();
+			entity.setStuId(authUser.getUsername());
+			isSign = signService.isSign(entity);
+		}
+		mv.addObject("isSign", isSign);
 		
 		return mv;
 	}

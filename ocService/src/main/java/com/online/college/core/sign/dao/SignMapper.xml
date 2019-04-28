@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://10.20.91.130/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.online.college.core.sign.dao.SignDao">
+
+    <resultMap id="BeanResultMap" type="com.online.college.core.sign.entity.Sign">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="stu_id" property="stuId" jdbcType="VARCHAR"/>
+        <result column="sign_in_time" property="signInTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+    <sql id="All_Columns">
+        id,stu_id,sign_in_time
+    </sql>
+
+    <select id="selectById" parameterType="INTEGER"
+            resultType="com.online.college.core.sign.entity.Sign">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM sign
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            <if test="id != null">
+                AND id = #{id, jdbcType=INTEGER}
+            </if>
+        </trim>
+    </select>
+
+    <insert id="save" parameterType="com.online.college.core.sign.entity.Sign" flushCache="true"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO sign
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="stuId != null ">
+                stu_id,
+            </if>
+            <if test="signInTime != null ">
+                sign_in_time,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="stuId != null ">
+                #{stuId, jdbcType=VARCHAR},
+            </if>
+            <if test="signInTime != null">
+                #{signInTime, jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="getTotalItemsCount" parameterType="com.online.college.core.sign.entity.Sign"
+            resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM sign
+    </select>
+
+    <select id="selectSignForPage" resultMap="BeanResultMap">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM sign
+        WHERE del = 0
+        <if test="param1.stuId != null">
+            AND stu_id =#{param1.stuId,jdbcType=VARCHAR}
+        </if>
+        ORDER BY sign_in_time desc
+        LIMIT #{param2.startIndex, jdbcType=INTEGER} , #{param2.pageSize, jdbcType=INTEGER}
+    </select>
+
+    <select id="selectByTime" parameterType="com.online.college.core.sign.entity.Sign"
+            resultType="com.online.college.core.sign.entity.Sign">
+        SELECT
+        <include refid="All_Columns"/>
+        FROM sign
+        <trim prefix="WHERE " prefixOverrides="AND |OR ">
+            AND to_days(sign_in_time) = to_days(now())
+            <if test="stuId != null">
+                AND stu_id = #{stuId, jdbcType=VARCHAR}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

@@ -8,119 +8,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55e28a88-aeef-421f-88b2-6ce0fb84bead" name="Default" comment="通知公告-修改删除">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/file/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/file/filePageList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/createModal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/studentHomeWork.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/workPageList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/res/js/myUeditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileParentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileParentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileRealDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileRealMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/entity/FileParent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/entity/FileReal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/FileParentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/FileRealService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/impl/FileParentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/impl/FileRealServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/dao/StudentWorkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/dao/StudentWorkMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/dao/TeacherWorkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/dao/TeacherWorkMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/entity/StudentHomeWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/entity/TeacherHomeWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/service/StudentWorkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/service/TeacherWorkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/service/impl/StudentWorkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/service/impl/TeacherWorkServiceImpl.java" afterDir="false" />
+    <list default="true" id="55e28a88-aeef-421f-88b2-6ce0fb84bead" name="Default" comment="资源下载/作业上传">
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/SignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/sign/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/SignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/entity/Sign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/SignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/impl/SignServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/wiki/7/7-06——M站——账号OAuth认证.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/doc/wiki/7/7-06——M站——账号OAuth认证.ppt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocCommon/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocCommon/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocCommon/target/ocCommon-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocCommon/target/ocCommon-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/resources/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/resources/shiro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/classify/classifyIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/classify/classifyIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/append.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/append.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/pagelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/pagelist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/classes/com/online/college/opt/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/classes/com/online/college/opt/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/classes/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/classes/shiro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/createModal.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/createModal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator.war" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/com/online/college/opt/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/com/online/college/opt/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/classes/shiro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocCommon-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocCommon-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/classify/classifyIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/classify/classifyIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/cms-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/cms-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/course/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/course/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/course/append.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/course/append.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/course/pagelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/course/pagelist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/user/userPageList.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocOperator/target/ocOperator/WEB-INF/pages/cms/user/userPageList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/ueditor/jsp/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/ueditor/jsp/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/PortalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/classes/com/online/college/portal/controller/PortalController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal.war" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/lib/ocCommon-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/lib/ocCommon-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/PortalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/classes/com/online/college/portal/controller/PortalController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/WEB-INF/pages/common/res.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocPortal/target/ocPortal/ueditor/jsp/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ocPortal/target/ocPortal/ueditor/jsp/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/auth/dao/AuthUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/auth/dao/AuthUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/auth/domain/AuthUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/auth/domain/AuthUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/web/auth/AuthRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/src/main/java/com/online/college/web/auth/AuthRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/auth/dao/AuthUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/auth/dao/AuthUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/auth/domain/AuthUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/core/auth/domain/AuthUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/classes/com/online/college/web/auth/AuthRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/classes/com/online/college/web/auth/AuthRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/ocService-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/ocService-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/surefire-reports/TEST-com.online.college.service.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/surefire-reports/TEST-com.online.college.service.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocService/target/surefire-reports/com.online.college.service.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ocService/target/surefire-reports/com.online.college.service.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocWechat/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat.war" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/ocWechat.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/lib/ocCommon-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/lib/ocCommon-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/lib/ocService-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ocWechat/target/ocWechat/WEB-INF/pages/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/ocService/target/" />
     <ignored path="$PROJECT_DIR$/ocWechat/target/" />
@@ -169,73 +85,106 @@
     <favorites_list name="ocProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/login.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SignMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="253">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/read.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/user.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="video.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/video.html">
+      <file leaf-file-name="learn.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="315">
+              <caret line="223" column="30" selection-start-line="223" selection-start-column="26" selection-end-line="223" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/comment.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/index.html">
+      <file leaf-file-name="PortalController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="failure.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/common/failure.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/common/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="285">
+              <caret line="180" selection-start-line="180" selection-end-line="180" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthRealm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CourseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="162" selection-start-line="162" selection-end-line="162" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/impl/SignServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign" pinned="false" current-in-tab="true">
+        <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/sign">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sign.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/entity/Sign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/SignController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthRealm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/web/auth/AuthRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="252">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="res.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/common/res.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -252,17 +201,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modal</find>
-      <find>modal-dialog</find>
-      <find>notice/delete</find>
-      <find>student_homework</find>
-      <find>BeanResultMap</find>
-      <find>notice/queryNotice</find>
-      <find>/queryNotice</find>
-      <find>/queryPrograma</find>
-      <find>/classify</find>
-      <find>queryFollowStudyRecord</find>
-      <find>select</find>
       <find>require</find>
       <find>col-sm-4</find>
       <find>editor</find>
@@ -282,6 +220,17 @@
       <find>loginForm</find>
       <find>fileReal</find>
       <find>student</find>
+      <find>?id=</find>
+      <find>search-btn</find>
+      <find>search_btn</find>
+      <find>header-nav</find>
+      <find>关注</find>
+      <find>followFlag</find>
+      <find>/learn</find>
+      <find>签到</find>
+      <find>/flower</find>
+      <find>/doFollow</find>
+      <find>sign</find>
     </findStrings>
     <dirStrings>
       <dir>base</dir>
@@ -308,23 +257,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/res/js/myUeditor.js" />
-        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/update.html" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/dao/StudentWorkDao.java" />
-        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html" />
-        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/add.html" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/entity/FileParent.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileParentMapper.fxml" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileParentDao.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/FileParentService.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileRealMapper.xml.fxml" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileRealDao.java" />
-        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/FileRealService.java" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/entity/FileReal.java" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/file/workPageList.html" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/impl/FileRealServiceImpl.java" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/impl/FileParentServiceImpl.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/console.sql" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/append.html" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/file/add.html" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/dao/FileRealMapper.xml" />
@@ -337,8 +273,6 @@
         <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/info.html" />
-        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" />
-        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html" />
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/service/StudentWorkService.java" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/studentHomeWork.html" />
@@ -352,13 +286,28 @@
         <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/auth/dao/AuthUserMapper.xml" />
         <option value="$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/login.html" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java" />
         <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/pagelist.html" />
         <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html" />
         <option value="$PROJECT_DIR$/ocWechat/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ocWechat/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/entity/Sign.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignDao.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/SignService.java" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/impl/SignServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/SignController.java" />
+        <option value="af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/student_homework.sql" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/sign/list.html" />
+        <option value="$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html" />
+        <option value="$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/SignController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/console.sql" />
+        <option value="$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignMapper.xml" />
       </list>
     </option>
   </component>
@@ -379,9 +328,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1860" />
-    <option name="height" value="1090" />
+    <option name="x" value="820" />
+    <option name="y" value="45" />
+    <option name="width" value="875" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -394,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -405,88 +354,88 @@
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="online" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="online" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="online" type="462c0819:PsiDirectoryNode" />
               <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="online" type="462c0819:PsiDirectoryNode" />
               <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -494,7 +443,7 @@
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -503,12 +452,118 @@
             <path>
               <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="ocProject" type="462c0819:PsiDirectoryNode" />
-              <item name="ocWechat" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocPortal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="sign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ocProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocProject" type="462c0819:PsiDirectoryNode" />
+              <item name="ocService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="online" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="sign" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -516,11 +571,12 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="authcon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java&#10;login&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/auth/login.html&#10;auth&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/auth/domain/AuthUser.java&#10;AuthRealm&#9;PSI&#9;JAVA://com.online.college.web.auth.AuthRealm&#10;student&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/studentHomeWork.html&#10;work&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java&#10;workC&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java&#10;workCon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java&#10;pagelist&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/pagelist.html&#10;fil&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java&#10;filep&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/file/entity/FileParent.java&#10;filec&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java&#10;cm&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html&#10;filecon&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java&#10;cn&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html&#10;filepar&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/file/entity/FileParent.java&#10;comm&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html&#10;com&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html&#10;work/commit&#9;null&#9;null&#10;my&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/res/js/myUeditor.js&#10;commit&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html&#10;config.json&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/ueditor/jsp/config.json&#10;myUeditor&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/res/js/myUeditor.js&#10;add&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/add.html&#10;workpage&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/workPageList.html&#10;myba&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/resources/mybatis-config.xml&#10;home&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/TeacherHomeWork.java&#10;tea&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/TeacherHomeWork.java&#10;teacher&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/TeacherHomeWork.java&#10;dd&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/add.html&#10;noti&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java&#10;no&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/service/impl/StudentWorkServiceImpl.java&#10;workcon&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java&#10;StudentHomeWork&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/StudentHomeWork.java&#10;tailpa&#9;PSI&#9;JAVA://com.online.college.common.page.TailPage&#10;studentwork&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/StudentHomeWork.java&#10;page&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html&#10;notice&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/notice/dao/NoticeMapper.xml&#10;learn&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/learn.html&#10;style&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/res/css/style.css&#10;tail&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/common/tailPage.html&#10;tailPage&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage.html&#10;menu&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java&#10;lear&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/learn.html&#10;jsonvi&#9;PSI&#9;JAVA://com.online.college.common.web.JsonView&#10;progra&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/ProgramaController.java&#10;pro&#9;PSI&#9;JAVA://com.online.college.opt.controller.ProgramaController&#10;info&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html&#10;noticecon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java&#10;list&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html" />
+    <property name="SearchEverywhereHistoryKey" value="home&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/home.html&#10;signCon&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/SignController.java&#10;res/list&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html&#10;notice&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java&#10;userpage&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html&#10;sign&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/sign/entity/Sign.java&#10;sign/list&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/sign/list.html&#10;Signc&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/SignController.java&#10;Sign&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/sign/entity/Sign.java&#10;work&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work&#10;authcon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java&#10;login&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/auth/login.html&#10;auth&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/auth/domain/AuthUser.java&#10;AuthRealm&#9;PSI&#9;JAVA://com.online.college.web.auth.AuthRealm&#10;student&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/studentHomeWork.html&#10;workC&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java&#10;workCon&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java&#10;pagelist&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/pagelist.html&#10;fil&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java&#10;filep&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/file/entity/FileParent.java&#10;filec&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java&#10;cm&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html&#10;filecon&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java&#10;cn&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html&#10;filepar&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/file/entity/FileParent.java&#10;comm&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html&#10;com&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html&#10;work/commit&#9;null&#9;null&#10;my&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/res/js/myUeditor.js&#10;commit&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/work/commit.html&#10;config.json&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/ueditor/jsp/config.json&#10;myUeditor&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/res/js/myUeditor.js&#10;add&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/add.html&#10;workpage&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/workPageList.html&#10;myba&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/resources/mybatis-config.xml&#10;tea&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/TeacherHomeWork.java&#10;teacher&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/TeacherHomeWork.java&#10;dd&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/add.html&#10;noti&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java&#10;no&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/service/impl/StudentWorkServiceImpl.java&#10;workcon&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java&#10;StudentHomeWork&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/StudentHomeWork.java&#10;tailpa&#9;PSI&#9;JAVA://com.online.college.common.page.TailPage&#10;studentwork&#9;FILE&#9;file://D:/project/idea/ocProject/ocService/src/main/java/com/online/college/core/work/entity/StudentHomeWork.java&#10;page&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html&#10;learn&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/learn.html&#10;style&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/res/css/style.css&#10;tail&#9;FILE&#9;file://D:/project/idea/ocProject/ocOperator/src/main/webapp/WEB-INF/pages/common/tailPage.html&#10;tailPage&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/webapp/WEB-INF/pages/common/tailPage.html&#10;menu&#9;FILE&#9;file://D:/project/idea/ocProject/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -529,7 +585,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -541,11 +597,11 @@
       <recent name="com.online.college.portal.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\idea\ocProject\ocOperator\src\main\webapp\WEB-INF\pages\cms\sign" />
+      <recent name="D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\sign\dao" />
       <recent name="D:\project\idea\ocProject\ocOperator\src\main\webapp\WEB-INF\pages\cms\work" />
       <recent name="D:\project\idea\ocProject\ocOperator\src\main\webapp\WEB-INF\pages\cms\file" />
       <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\WEB-INF\pages\work" />
-      <recent name="D:\project\idea\ocProject\ocPortal\src\main\webapp\res\js" />
-      <recent name="D:\project\idea\ocProject\ocService\src\main\java\com\online\college\core\work\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -773,7 +829,9 @@
       <workItem from="1556112895498" duration="694000" />
       <workItem from="1556162596104" duration="3564000" />
       <workItem from="1556182072226" duration="2441000" />
-      <workItem from="1556251294717" duration="10469000" />
+      <workItem from="1556251294717" duration="11157000" />
+      <workItem from="1556358553231" duration="3239000" />
+      <workItem from="1556373146874" duration="13383000" />
     </task>
     <task id="LOCAL-00001" summary="整合UEditor 以ocPortal模块为准">
       <created>1552620762573</created>
@@ -803,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554010545820</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="资源下载/作业上传">
+      <created>1556269002719</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556269002719</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371225000" />
+    <option name="totallyTimeSpent" value="388535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +884,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -829,11 +894,11 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.09584451" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.10589813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.26917714" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.41422594" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32909605" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.47881356" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -841,22 +906,22 @@
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32909605" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.71468925" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.35704324" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.28033474" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32909605" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.4759887" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50706214" visible="true" weight="0.25737265" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.24825662" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.50706214" visible="true" weight="0.19504021" />
       <window_info id="Web" order="6" sideWeight="0.49293786" side_tool="true" weight="0.24262735" />
       <window_info anchor="right" id="BPMNPalette" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.46164575" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="5" sideWeight="0.502008" side_tool="true" weight="0.22136332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.37377962" />
       <window_info anchor="bottom" id="SQL Generator" order="12" weight="0.32914925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.46164575" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.45338982" />
@@ -933,40 +998,29 @@
     <MESSAGE value="整体布局，通知公告模块以及富文本编辑器的整合" />
     <MESSAGE value="通知公告-info" />
     <MESSAGE value="通知公告-修改删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="通知公告-修改删除" />
+    <MESSAGE value="资源下载/作业上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="资源下载/作业上传" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java</url>
-          <line>59</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java</url>
-          <line>145</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/baidu/ueditor/upload/BinaryUploader.java</url>
           <line>72</line>
           <properties />
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java</url>
-          <line>161</line>
-          <properties />
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/SiteCarouselController.java</url>
@@ -1041,12 +1095,6 @@
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/service/impl/StudentWorkServiceImpl.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/web/auth/AuthRealm.java</url>
           <line>48</line>
           <properties />
@@ -1082,15 +1130,83 @@
           <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/SignController.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/impl/SignServiceImpl.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/SignController.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/SignController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="84" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>isSign = signService.isSign(entity)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new JsonView(0).toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Long userId = SessionContext.getUserId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>page = signService.selectSignForPage(sign, page)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>&quot;## user password is not correct! &quot;.equals(e.getMessage())</expression-string>
         <language-id>JAVA</language-id>
@@ -1116,327 +1232,411 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>teacherHomeWork.getStatus()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>file.isEmpty()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fileParentDao.findById(id)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fileRealDao.save(fileReal)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_auth_user">
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/notice/dao/NoticeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="63" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/AuthUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/student_homework.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/workPageList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/work/dao/StudentWorkMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="98" selection-start-line="98" selection-end-line="101" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/ProgramaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="77" column="122" selection-start-line="77" selection-start-column="112" selection-end-line="77" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/notice/noticePageList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/sign/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/user/userPageList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="151" column="39" lean-forward="true" selection-start-line="151" selection-start-column="39" selection-end-line="151" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/cms-nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/res/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="1060" column="4" selection-start-line="1060" selection-start-column="4" selection-end-line="1060" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CollectionsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="117" column="48" lean-forward="true" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/res.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/notice/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/structural.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/user/service/impl/UserFollowsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/t_course">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/index.html">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="133" column="18" lean-forward="true" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/auth/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/work/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="135" column="37" lean-forward="true" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/workPageList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="79" column="37" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/WorkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/menu/service/impl/MenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/file/service/impl/FileParentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/file/filePageList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1083">
-          <caret line="171" column="12" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/studentHomeWork.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="24" column="71" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/createModal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-670" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/work/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/programa/pagelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/readComment.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/readReport.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/readSection.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="260" column="48" selection-start-line="260" selection-start-column="48" selection-end-line="260" selection-end-column="48" />
+        <state relative-caret-position="-10303">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/append.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/read.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/add.html">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/NoticeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1539" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/webapp/WEB-INF/pages/cms/course/pagelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="72" column="100" lean-forward="true" selection-start-line="72" selection-start-column="90" selection-end-line="72" selection-end-column="100" />
+        <state relative-caret-position="-798">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/ueditor/third-party/SyntaxHighlighter/shCore.js">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/WorkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
+        <state relative-caret-position="457">
+          <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/file_real">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="247" column="44" selection-start-line="247" selection-start-column="35" selection-end-line="247" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/res/list.html">
+    <entry file="file://$PROJECT_DIR$/ocOperator/src/main/java/com/online/college/opt/controller/SignController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="38" column="75" lean-forward="true" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
+        <state relative-caret-position="297">
+          <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/common/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="-532">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#nav#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#nav#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#form#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#form#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#form#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/ResController.java">
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="244">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/UEditroController.java">
+    <entry file="file://$PROJECT_DIR$/ocCommon/src/main/java/com/online/college/common/web/JsonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="172">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <folding>
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/java/com/online/college/wechat/wxapi/controller/WxApiCtrl.java">
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/entity/Sign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/resources/memcache.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/resources/application.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.1.RELEASE/spring-web-4.1.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="98">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/java/com/online/college/wechat/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-514">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/java/com/online/college/wechat/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/FollowerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/java/com/online/college/wechat/controller/CourseController.java">
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/SignController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/read.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/user.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/common/failure.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/common/res.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/comment.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocWechat/src/main/webapp/WEB-INF/pages/common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="113">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/web/auth/AuthRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="252">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/PortalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/webapp/WEB-INF/pages/learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="223" column="30" selection-start-line="223" selection-start-column="26" selection-end-line="223" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/service/impl/SignServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocPortal/src/main/java/com/online/college/portal/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocService/src/main/java/com/online/college/core/sign/dao/SignMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://af876882-8dcd-4adf-8fc7-bd5c2f5a9cba/schema/ocdb/table/sign">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

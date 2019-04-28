@@ -115,6 +115,15 @@
 					<span class="lecturer-name">${(courseTeacher.realname)!""}</span>
 					<span class="lecturer-title">${(courseTeacher.collegeName)!""} · ${(courseTeacher.education)!""}</span>
 					<span class="lecturer-p" >${(courseTeacher.title)!""}，${(courseTeacher.sign)!""}</span>
+					<a href="javascript:void(0)"  onclick="doSign();">
+						<span id="followSpan" class="follow-btn">
+						<#if isSign>
+						已签到
+						<#else>
+						签到
+						</#if>
+						</span>
+					</a>
 				</div>
 				</#if>
 
@@ -206,6 +215,22 @@
                 );
 
 
+            }
+
+            //签到
+            function doSign(){
+                $.ajax({
+                    url: '${s.base}/sign/signIn.html',
+                    type:'POST',
+                    dataType:'json',
+                    success:function(resp){
+                        if(resp.errcode == 0){
+                            $('#followSpan').html('已签到');
+                        }else if(resp.errcode == 1){
+                            $('#followSpan').html('签到');
+                        }
+                    }
+                });
             }
 
 		</script>
